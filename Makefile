@@ -1,8 +1,8 @@
 MODULE_NAME = silead
 
-#CROSS_COMPILE ?= arm-linux-gnueabihf-
-#ARCH ?= arm
-ARCH := $(shell uname -m | sed -e s/i.86/i386/)
+CROSS_COMPILE ?= arm-linux-gnueabihf-
+ARCH ?= arm
+#ARCH := $(shell uname -m | sed -e s/i.86/i386/)
 KVER := $(shell uname -r)
 KSRC := /lib/modules/$(KVER)/build
 PWD = $(shell pwd)
